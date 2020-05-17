@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #333;
   margin-bottom: 50px;
   text-align: center;
   font-size: 20px;
@@ -66,11 +66,15 @@ h2 {
   letter-spacing: 1px;
 }
 
+.h2-inverse {
+  color: #fff;
+}
+
 h3 {
   color: #333;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -80,7 +84,7 @@ h3 {
   text-align: center;
   letter-spacing: 1.5px;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .wrapper-map {
@@ -100,7 +104,6 @@ h3 {
 
 .card {
   width: 300px;
-  height: 275px;
   -webkit-box-shadow: 1px 1px 28px 8px lightgrey;
           box-shadow: 1px 1px 28px 8px lightgrey;
   margin: 0 20px;
@@ -120,20 +123,37 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: #fff;
+  color: #333;
   padding: 10px 20px;
+  -webkit-transition: background-image 0.5s;
+  transition: background-image 0.5s;
 }
 
 .photo-1 {
-  background-image: url("./assets/ride-1.jpeg");
+  background-image: url("./assets/map.png");
+}
+
+.photo-1:hover {
+  background-image: url("./assets/prokop-1.jpg");
+  color: #fff;
 }
 
 .photo-2 {
+  background-image: url("./assets/map-2.png");
+}
+
+.photo-2:hover {
   background-image: url("./assets/ride-2.jpg");
+  color: #fff;
 }
 
 .photo-3 {
+  background-image: url("./assets/map-3.png");
+}
+
+.photo-3:hover {
   background-image: url("./assets/ride-3.jpg");
+  color: #fff;
 }
 
 .description {
@@ -141,7 +161,106 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 75px;
+  height: 85px;
   padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description-ride {
+  line-height: 24px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.kilometers {
+  color: #828282;
+}
+
+.center {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.wrapper-video {
+  margin-bottom: 30px;
+}
+
+.wrapper-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  width: 90%;
+  margin: 0 auto 30px auto;
+}
+
+.wrapper-photos {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper-photos img {
+  width: 325px;
+}
+
+.item-stats {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 0 10px;
+  -webkit-box-shadow: 1px 1px 15px 1px lightgrey;
+          box-shadow: 1px 1px 15px 1px lightgrey;
+}
+
+.testimonial {
+  font-style: italic;
+}
+
+.button {
+  color: #fff;
+  background: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
+  padding: 15px 20px;
+  border-radius: 35px;
+}
+
+.button a {
+  color: #fff;
+}
+
+.location {
+  font-size: 15px;
+  width: 100%;
+  color: #828282;
+}
+
+.filters {
+  margin-bottom: 50px;
+}
+
+.filters a {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */
